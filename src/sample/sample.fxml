@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="854.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="mainCanvas" height="625.0" layoutX="28.0" layoutY="45.0" width="586.0" />
+      <Slider fx:id="sldW1" layoutX="645.0" layoutY="250.0" max="4.0" min="1.0" showTickMarks="true" value="2.0" />
+      <Slider fx:id="sldW2" layoutX="645.0" layoutY="323.0" majorTickUnit="1.0" max="2.0" min="1.0" minorTickCount="1" value="1.0" />
+      <Slider fx:id="sldH" layoutX="645.0" layoutY="388.0" max="4.0" value="2.0" />
+      <Slider fx:id="sldR" layoutX="645.0" layoutY="459.0" max="3.0" min="0.5" value="1.0" />
+      <Label layoutX="645.0" layoutY="212.0" text="W1" />
+      <Label layoutX="645.0" layoutY="289.0" text="W2" />
+      <Label layoutX="645.0" layoutY="357.0" text="H" />
+      <Label layoutX="645.0" layoutY="427.0" text="радиус" />
+      <Slider fx:id="sldRt" layoutX="645.0" layoutY="528.0" min="-100.0" value="1.0" />
+      <Label layoutX="645.0" layoutY="502.0" text="вращение" />
+      <Slider fx:id="sldSc" layoutX="645.0" layoutY="603.0" max="200.0" value="100.0" />
+      <Label layoutX="645.0" layoutY="574.0" text="масштабирование" />
+      <Button fx:id="button" layoutX="631.0" layoutY="77.0" mnemonicParsing="false" onAction="#onClickMethod" text="вернитесь в исходное состояние" />
+      <Button fx:id="buttonCompare" layoutX="631.0" layoutY="121.0" mnemonicParsing="false" onAction="#onClickMethod" text="сравните с тем, что было" />
+   </children>
+</AnchorPane>
